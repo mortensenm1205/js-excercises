@@ -8,7 +8,9 @@ var arrInput = [fname, email, phoneNumber]
 
 function formValid(event) {
   if (event.value !== '') {
-    result.innerHTML += event.value + ' ';
+    var p = document.createElement('p');
+    p.innerHTML += event.value + ' ';
+    result.appendChild(p);
   }
   event.value = '';
 }
