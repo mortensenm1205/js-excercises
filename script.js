@@ -6,6 +6,10 @@ var btn = document.getElementById("btn");
 function focusInput(event) {
   event.addEventListener('focusin', function() {
     this.style.backgroundColor = "pink";
+  });
+
+  event.addEventListener('focusout', function() {
+    this.style.backgroundColor = "white";
   })
 }
 
