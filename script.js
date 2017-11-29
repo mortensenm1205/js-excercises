@@ -6,3 +6,7 @@ var btn = document.getElementById("btn");
 btn.addEventListener('click', function() {
   console.log("This Worked");
 });
+
+email.addEventListener('focusin', function() {
+  console.log("This works with focus");
+});
