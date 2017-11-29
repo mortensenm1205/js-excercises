@@ -14,18 +14,10 @@ function formValid(event) {
 }
 
 btn.addEventListener('click', function() {
-  // for(var i = 0; i < arrInput.length; i++) {
-  //   formValid(arrInput[i]);
-  // }
-  formValid(fname);
-  formValid(email);
-  formValid(phoneNumber);
+  for(var i = 0; i < arrInput.length; i++) {
+    formValid(arrInput[i]);
+  }
+  // formValid(fname);
+  // formValid(email);
+  // formValid(phoneNumber);
 });
-
-/*
-Form Validation.
-I need to write a function that checks if a form / text area is empty
-IF it is then I can display an alert that says hey enter all fields
-IF not then i can proceed with adding it to the p element "result".
-I then need to bind this to my button.
-*/
