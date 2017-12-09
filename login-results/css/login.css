@@ -21,7 +21,8 @@ form > input {
   color: #E1F7E7;
 }
 
-input[type=text] {
+input[type=text],
+input[type=password] {
   font-size: 1.8em;
 }
 
