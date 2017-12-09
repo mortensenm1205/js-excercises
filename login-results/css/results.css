@@ -36,5 +36,17 @@ body {
 
 
 #circle {
-  background-color:
+  background-color: dodgerblue;
+  max-width: 250px;
+  min-height: 230px;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+#circle p {
+  width: 100%;
+  padding-top: 40%;
+  font-size: 1.3em;
+  font-weight: 600;
+  text-transform: uppercase;
 }
