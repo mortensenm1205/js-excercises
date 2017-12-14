@@ -1,24 +1,26 @@
 (function(global) {
 
-  function Worker(name, age, gender){
-    this.name = name;
-    this.age = age;
-    this.gender = gender;
+  function Office(){
+    this.workerList = [];
   };
 
-  Worker.prototype.generateId = function(worker) {
-    if (worker) {
-      this.id = 1;
+  Office.prototype.addWorker = function(worker, show) {
+    if(this.workerList.includes(worker)) {
+      //You'll need to update this if you want to use an object, worker.name. But for now use a string
+      show.elementAlreadyExists(worker);
+      return worker.name + " has already been added!";
     } else {
-      ++this.id;
+      this.workerList.push(worker);
+      show.addHTMLElementToDom(worker);
+      return worker.name + " is now added!"
     }
+  };
+
+  Office.prototype.getWorkerList = function() {
+    return this.workerList;
   }
 
-  Worker.prototype.getId = function() {
-    return this.id;
-  }
-
-  global.Worker = Worker;
+  global.Office = Office;
 
 
 })(this);
