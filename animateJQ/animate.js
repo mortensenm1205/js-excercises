@@ -5,6 +5,7 @@ $(function() {
   var $img = $('img');
   var $x = $('#x');
 
+  //Updating the elements values 
   //Here's the title element I wanted to create, give it content, and then append all with jQ
   var $title = $('<h1></h1>');
   $title.text("Hello There! Welcome to the wonderful world of jQuery <3");
