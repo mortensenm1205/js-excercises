@@ -6,10 +6,10 @@ $(function() {
 
   $x.val('✓')
 
-  $imgContainer.css({'position': 'absolute', 'left': '-500px'});
+  $imgContainer.css({'position': 'absolute', 'left': '-600px'});
 
   $x.click(function() {
-    if($imgContainer.css('left') == '-500px' ) {
+    if($imgContainer.css('left') == '-600px' ) {
       $x.val('X')
       $imgContainer.animate({
         left: '0px'
@@ -17,7 +17,7 @@ $(function() {
     } else {
       $x.val('✓')
       $imgContainer.animate({
-        left: '-500px'
+        left: '-600px'
       });
     }
   });
