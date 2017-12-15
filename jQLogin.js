@@ -1,6 +1,6 @@
 $(function() {
 
-  $('body').hide().css('max-heigth', '1100px');
+  $('body').hide();
   $('body').fadeIn(4000, function() {
     $('p:nth-child(3), p:nth-child(2)').fadeOut(4000);
   });
