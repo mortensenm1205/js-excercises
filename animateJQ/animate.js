@@ -40,7 +40,7 @@ $(function() {
     var gMailEnding = '.*[gmail].*';
     if(email.val().match(gMailEnding)) {
       email.val('');
-      console.log("my guy this fucking worked");
+      console.log("my guy it works <3");
     } else {
       throw "Email be wrong, fix it";
     }
