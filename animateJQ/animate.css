@@ -70,3 +70,12 @@ form > label {
   }
 
 }
+
+@media all and (min-width: 1000px) {
+
+  form {
+    left: 250px;
+    max-width: 45%;
+  }
+
+}
