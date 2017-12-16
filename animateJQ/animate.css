@@ -33,6 +33,7 @@ h1 {
 
 form {
   position: relative;
+  top: 80px;
   left: 90px;
   max-width: 60%;
   border: 10px solid pink;
@@ -74,6 +75,7 @@ form > label {
 @media all and (min-width: 1000px) {
 
   form {
+    top: 55px;
     left: 250px;
     max-width: 45%;
   }

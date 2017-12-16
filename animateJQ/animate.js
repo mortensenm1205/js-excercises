@@ -52,6 +52,8 @@ $(function() {
   //Here's the title element I wanted to give it content, and then append all with jQ
   $title.text("Hello There! Welcome to the wonderful world of jQuery <3");
   $('body').append($title);
+  //Hidding x button
+  $x.hide();
   //setting a value for button X but with jQ
   $x.val('✓')
 
