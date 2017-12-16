@@ -7,6 +7,8 @@ body {
 #img-container {
   max-width: 60%;
   max-height: 750px;
+  position: absolute;
+  left: -600px;
 }
 
 #img-container img {
@@ -21,6 +23,22 @@ body {
   color: white;
 }
 
+h1 {
+  max-width: 1000px;
+  position: absolute;
+  left: 10%;
+  font-size: 4em;
+  color: white;
+}
+
+form {
+  position: relative;
+  left: 90px;
+  max-width: 60%;
+  border: 10px solid pink;
+  padding: 5%;
+  background-color: #0284A8;
+}
 
 input, label {
   display: block;

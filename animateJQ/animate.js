@@ -47,35 +47,13 @@ $(function() {
   }
 
   //Updating the elements values
-  //giving the form it's position
-  $form.css({
-    'position': 'relative',
-    'left': '90px',
-    'max-width': '60%',
-    'border': '10px solid pink',
-    'padding': '5%',
-    'background-color': '#0284A8'
-  })
   //hiding the form
   $form.hide();
   //Here's the title element I wanted to give it content, and then append all with jQ
   $title.text("Hello There! Welcome to the wonderful world of jQuery <3");
   $('body').append($title);
-  //updating the css for $title
-  $title.css({
-    'max-width': '1000px',
-    'position': 'absolute',
-    'left': '23%',
-    'font-size': '4em',
-    'color': 'white'
-  });
   //setting a value for button X but with jQ
   $x.val('✓')
-  //Same here but with imgContainer and it's position
-  $imgContainer.css({
-    'position': 'absolute',
-    'left': '-600px'
-  });
 
   //The main events.
   //Had to use animate since slideUp/Down changed animation after I changed my picture size
