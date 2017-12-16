@@ -12,7 +12,7 @@ body {
 }
 
 #img-container img {
-  width: 100%;
+  width: 40%;
 }
 
 #x {
@@ -21,6 +21,9 @@ body {
   font-size: 2.2em;
   background-color: pink;
   color: white;
+  position: relative;
+  top: 250px;
+  left: 46%;
 }
 
 h1 {
@@ -67,7 +70,7 @@ form > label {
 @media all and (min-width: 820px) {
 
   #img-container img {
-    width: 90%;
+    width: 20%;
   }
 
 }

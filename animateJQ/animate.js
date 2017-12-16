@@ -12,6 +12,23 @@ $(function() {
   var $title = $('<h1></h1>');
 
   //Function Setup
+
+  function displayImage(btn, container) {
+    btn.click(function() {
+      if(container.css('left') == '-600px' ) {
+        btn.val('X')
+        container.animate({
+          left: '0px'
+        });
+      } else {
+        btn.val('✓')
+        container.animate({
+          left: '-600px'
+        });
+      }
+    });
+  }
+
   function showForm() {
     return $form.show(1000);
   }
@@ -21,8 +38,10 @@ $(function() {
     if(password.val().match(atLeastOneNumber)) {
       password.val('');
       console.log("worked");
+      return true;
     } else {
       console.log("Password be wrong, fix it");
+      return false;
     }
   }
 
@@ -31,8 +50,10 @@ $(function() {
     if(username.val().match(atLeastOneUpperCaseLetter)) {
       username.val('');
       console.log("this also worked");
+      return true;
     } else {
       console.log("Username be wrong, fix it");
+      return false;
     }
   }
 
@@ -41,8 +62,10 @@ $(function() {
     if(email.val().match(gMailEnding)) {
       email.val('');
       console.log("my guy it works <3");
+      return true;
     } else {
       console.log("Email be wrong, fix it");
+      return false;
     }
   }
 
@@ -58,21 +81,6 @@ $(function() {
   $x.val('✓')
 
   //The main events.
-  //Had to use animate since slideUp/Down changed animation after I changed my picture size
-  $x.click(function() {
-    if($imgContainer.css('left') == '-600px' ) {
-      $x.val('X')
-      $imgContainer.animate({
-        left: '0px'
-      });
-    } else {
-      $x.val('✓')
-      $imgContainer.animate({
-        left: '-600px'
-      });
-    }
-  });
-
   //Animating title to appear and then disappear AFTER it'll show form
   $title.hide();
   $title.fadeIn(4000);
@@ -82,9 +90,13 @@ $(function() {
 
   //A simple form validation
   $submit.click(function() {
-    correctPassword($password);
-    correctUsername($name);
-    correctGMail($email);
+    if(correctPassword($password) && correctUsername($name) && correctGMail($email)) {
+      $form.hide();
+      $x.show(1000);
+      displayImage($x, $imgContainer);
+    } else {
+      alert("Please fill in all forms correctly to enter");
+    }
   });
-
+  
 });
