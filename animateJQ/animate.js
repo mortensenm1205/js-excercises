@@ -22,7 +22,7 @@ $(function() {
       password.val('');
       console.log("worked");
     } else {
-      throw "Password be wrong, fix it";
+      console.log("Password be wrong, fix it");
     }
   }
 
@@ -32,7 +32,7 @@ $(function() {
       username.val('');
       console.log("this also worked");
     } else {
-      throw "Username be wrong, fix it";
+      console.log("Username be wrong, fix it");
     }
   }
 
@@ -42,7 +42,7 @@ $(function() {
       email.val('');
       console.log("my guy it works <3");
     } else {
-      throw "Email be wrong, fix it";
+      console.log("Email be wrong, fix it");
     }
   }
 
@@ -91,6 +91,7 @@ $(function() {
     showForm();
   });
 
+  //A simple form validation
   $submit.click(function() {
     correctPassword($password);
     correctUsername($name);
