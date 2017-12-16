@@ -21,11 +21,6 @@ body {
   color: white;
 }
 
-form {
-  max-width: 60%;
-  border: 10px solid pink;
-  padding: 5%;
-}
 
 input, label {
   display: block;
@@ -39,6 +34,7 @@ form > input {
 
 form > label {
   font-size: 2em;
+  color: white;
 }
 
 #submit {

@@ -47,6 +47,15 @@ $(function() {
   }
 
   //Updating the elements values
+  //giving the form it's position
+  $form.css({
+    'position': 'relative',
+    'left': '90px',
+    'max-width': '60%',
+    'border': '10px solid pink',
+    'padding': '5%',
+    'background-color': '#0284A8'
+  })
   //hiding the form
   $form.hide();
   //Here's the title element I wanted to give it content, and then append all with jQ
